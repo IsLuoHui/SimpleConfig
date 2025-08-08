@@ -36,7 +36,9 @@ namespace SimpleConfig
             return "树形图已刷新";
         }
 
-        public static void LoadAllDirectoryToTree(TreeView treeView, string rootPath)
+        #region 加载所有文件
+
+        private static void LoadAllDirectoryToTree(TreeView treeView, string rootPath)
         {
             treeView.BeginUpdate();
             treeView.Nodes.Clear();
@@ -93,5 +95,9 @@ namespace SimpleConfig
                 parentNode.Nodes.Add(errorNode);
             }
         }
+
+        #endregion
+
+        
     }
 }

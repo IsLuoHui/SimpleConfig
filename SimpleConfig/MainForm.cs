@@ -18,8 +18,13 @@ namespace SimpleConfig
             //string rootPath = Application.StartupPath;
             //MessageBox.Show($"当前路径{rootPath}", "标题", MessageBoxButtons.OK, MessageBoxIcon.Information);
             illustration.Image = Image.FromFile("D:\\User\\Desktop\\SimpleArtResources\\Illustrations\\Chapter1\\Img_Augenstern.png");
+
+            ConfigData config = ConfigData.LoadAllConfig("D:\\User\\Desktop\\SimpleArtResources");
+            config.Chapters[0].ChapterTitle = "单";
+            ConfigData.SaveAllConfig(config, "D:\\User\\Desktop\\SimpleArtResources");
             TreeViewHelper.TreeViewInit(artResouceFileTreeView, "D:\\User\\Desktop\\SimpleArtResources");
             //string result = await TreeViewHelper.RefreshTreeViewFromPathAsync(artResouceFileTreeView, "D:\\User\\Desktop\\SimpleArtResources");
+        
         }
 
 
