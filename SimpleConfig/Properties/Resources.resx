@@ -121,11 +121,38 @@
   <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vscode-icons--default-file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="file_type_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--file-type-audio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_type_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--file-type-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_type_protobuf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--file-type-protobuf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vscode-icons--default-folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folder_opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vscode-icons--default-folder-opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-audio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_audio_opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-audio-opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_images_opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-images-opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_src" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-src.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_type_src_opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vscode-icons--folder-type-src-opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="root_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vscode-icons--default-root-folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

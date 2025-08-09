@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Windows.Forms;
 
 
 namespace SimpleConfig
@@ -79,7 +80,8 @@ namespace SimpleConfig
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"读取 CSV 文件失败：{csvPath}\n错误信息：{ex.Message}");
+                //Console.WriteLine($"读取 CSV 文件失败：{csvPath}\n错误信息：{ex.Message}");
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return new List<T>();
             }
         }
@@ -99,7 +101,8 @@ namespace SimpleConfig
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"保存 CSV 文件失败：{csvPath}\n错误信息：{ex.Message}");
+                //Console.WriteLine($"保存 CSV 文件失败：{csvPath}\n错误信息：{ex.Message}");
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

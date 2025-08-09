@@ -16,11 +16,10 @@ namespace SimpleConfig
         {
             InitializeComponent();
             //string rootPath = Application.StartupPath;
-            //MessageBox.Show($"当前路径{rootPath}", "标题", MessageBoxButtons.OK, MessageBoxIcon.Information);
             illustration.Image = Image.FromFile("D:\\User\\Desktop\\SimpleArtResources\\Illustrations\\Chapter1\\Img_Augenstern.png");
 
             ConfigData config = ConfigData.LoadAllConfig("D:\\User\\Desktop\\SimpleArtResources");
-            config.Chapters[0].ChapterTitle = "单";
+            //config.Chapters[0].ChapterTitle = "单";
             ConfigData.SaveAllConfig(config, "D:\\User\\Desktop\\SimpleArtResources");
             TreeViewHelper.TreeViewInit(artResouceFileTreeView, "D:\\User\\Desktop\\SimpleArtResources");
             //string result = await TreeViewHelper.RefreshTreeViewFromPathAsync(artResouceFileTreeView, "D:\\User\\Desktop\\SimpleArtResources");
@@ -44,6 +43,15 @@ namespace SimpleConfig
             {
                 e.Node.ImageKey = "folder_opened";
                 e.Node.SelectedImageKey = "folder_opened";
+                foreach (var info in TreeViewHelper.FolderInfos)
+                {
+                    if (e.Node.Text == info.Name)
+                    {
+                        e.Node.ImageKey = info.SelectedImageKey;
+                        e.Node.SelectedImageKey = info.SelectedImageKey;
+                        break;
+                    }
+                }
             }
             artResouceFileTreeView.Invalidate();
         }
@@ -59,6 +67,15 @@ namespace SimpleConfig
             {
                 e.Node.ImageKey = "folder";
                 e.Node.SelectedImageKey = "folder";
+                foreach (var info in TreeViewHelper.FolderInfos)
+                {
+                    if (e.Node.Text == info.Name)
+                    {
+                        e.Node.ImageKey = info.ImageKey;
+                        e.Node.SelectedImageKey = info.ImageKey;
+                        break;
+                    }
+                }
             }
             artResouceFileTreeView.Invalidate();
         }
